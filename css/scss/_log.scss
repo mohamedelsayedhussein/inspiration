@@ -1,0 +1,173 @@
+
+
+
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 3; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    padding-top: 60px;
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15%;
+      width: 30%;
+      padding: 2rem; 
+      position: relative;
+
+        .x-container {
+
+          .close {
+            position: absolute;
+            right: 20px;
+            top: 8px;
+            color: #000;
+            font-size: 35px;
+            font-weight: bold;
+
+            &:hover {
+              color: $mainColor;
+              cursor: pointer;
+            }
+          }
+        }
+            
+        .container-input {
+
+          label {
+            font: 400 1rem $mainFont;
+          }
+
+          input[type=text], input[type=password] {
+            width: 85%;
+            padding: 12px 0;
+            margin: 8px 0;
+            display: block;
+            font: 400 .9rem $textFont;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid rgba(0, 0, 0, .5);
+            caret-color: $mainColor;
+          }
+
+          button {
+            background-color: $mainColor;
+            color: white;
+            padding: 10px 0;
+            margin: 11px 0;
+            border: none;
+            cursor: pointer;
+            width: 5rem;
+            display: block;
+            font: 400 1rem $mainFont;
+            box-shadow: 3px 3px 7px rgba(0, 0, 0, .3);
+
+              
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+
+          .flex-element {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          input[type='checkbox'] {
+            display: none;
+
+            &:checked + label:before {
+              color: #fff;
+            }
+          }
+
+          label.custom-chbox {
+            font: .8rem $textFont;
+            vertical-align: bottom;
+
+            &:before {
+              content: '\2714';
+              font-family: fontAwesome;
+              font-size: .7rem;
+              padding: .2rem;
+              color: transparent;
+              background: $mainColor;
+              width: .8rem;
+              height: .8rem;
+              line-height: .8rem;
+              vertical-align: bottom;
+              border: 1px solid $mainColor;
+              border-radius: 4px;
+              margin-right: .5rem;
+              transition: all .1s linear;
+            }
+
+          }
+          
+          span.forget {
+            display: block;
+            margin: .3rem 0;
+            font: 400 .8rem $textFont;
+
+            a {
+              color: $mainColor;
+            }
+          }
+
+          .social-log {
+            text-align: center;
+
+            p {
+              font: 500 .9rem $textFont;
+            }
+
+            a {
+              font-size: 1.2rem;
+              
+              i {
+                border: 1px solid #ccc;
+                width: 2.5rem;
+                height: 2.5rem;
+                line-height: 2.5rem;
+                text-align: center;
+                color: #111;
+                margin: 0 .2rem;
+                transition: all .2s linear;
+              }
+
+              .facebook:hover {
+                color: #3b5998;
+              }
+
+              .insta:hover {
+                color: #fcaf45;
+              }
+
+              .go:hover {
+                color: #dd4b39;
+              }
+            }
+          }
+        }
+    }
+
+    .animate {
+      -webkit-animation: animatezoom 0.6s;
+      animation: animatezoom 0.6s;
+
+      @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)} 
+        to {-webkit-transform: scale(1)}
+      }
+        
+      @keyframes animatezoom {
+        from {transform: scale(0)} 
+        to {transform: scale(1)}
+      }
+    } 
+  }

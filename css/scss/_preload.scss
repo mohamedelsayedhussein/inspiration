@@ -1,0 +1,41 @@
+
+
+.preload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    animation: fade .5s linear forwards;
+    animation-delay: 3s;
+    background: #fff;
+    z-index: 99999;
+
+    @keyframes fade {
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+
+    .loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background: #000;
+    }
+
+    .count {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font: 700 7vw $mainFont;
+        color: $whiteColor;
+        mix-blend-mode: difference;
+    }
+}

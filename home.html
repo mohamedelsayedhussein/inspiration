@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='description' content=' inspiration web design '>
+        <meta http-equiv='x-ua-compatible' content='ie=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+        <title>Inspiration Challenge App</title>
+        <!--  Use fontawesome  Library -->
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css'>
+        <!--  Shortcut Icon Of Favicon  -->
+        <link rel='shortcut icon'  href='img/icon.png'>
+        <!--  Reset Css Browsers Style  -->
+        <link rel='stylesheet' href='vendors/normalize.css'>
+        <!--  Styling External File  -->
+        <link rel='stylesheet' href='css/style.css'>
+        <!--  Animation Style Library  -->
+        <link rel='stylesheet' href='vendors/animate.css'>
+        <!--  Slider Using Carousel Library  -->
+        <link rel='stylesheet' href='vendors/owl.carousel.min.css'>
+        <link rel='stylesheet' href='vendors/owl.theme.default.min.css'>
+        <!--  Web Font From Google Fonts -->
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700'>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Coda'>
+        <!--[if lt IE 9]>
+            <script src='js/html5shiv.min.js'></script>
+            <script src='js/respond.min.js'></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class='browserupgrade'>You are using an <strong>outdated</strong> browser. Please <a href='https://browsehappy.com/'>upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+<!-- ============== start preloading page ================= -->
+            <div class='preload'>
+                <div class='loader'></div>
+                <div class='count'></div>
+            </div>
+<!-- ============== end preloading page ================= -->
+
+<div class='right-bar'>
+    <div class='search'>
+        <span><i class='fas fa-search'></i></span>
+    </div>
+    <div class='lang'>
+        <span>EN &nbsp;</span>
+        <span> --- </span>
+        <span>&nbsp; AR</span>
+    </div>
+
+    <div class='equal' id='equal' onclick='verticallyFunction()'>=</div>
+    <ul class='icons'> <!-- Open Social-Icons -->
+        <li><i class='fab fa-facebook-f'></i><a href='#'>Facebook</a></li>
+        <li><i class='fab fa-twitter'></i><a href='#'>Twitter</a></li>
+        <li><i class='fab fa-linkedin-in'></i><a href='#'>Linked In</a></li>
+    </ul> <!-- Open Social-Icons -->
+</div>
+
+<!-- ============== start header ================= -->
+<header>
+    <div class='container'>
+        <div class='logo'><img src='img/logo.png' alt=''></div>
+        <div class='demo upper'><a href='#'>get a free demo!
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </a>
+        </div>
+        <ul class='flex-head capitalize'>
+            <li><a href='#'>partners</a></li>       
+            <li><a href='#'>resources</a></li>
+            <li><a href='#' onclick="document.getElementById('popup').style.display='block'">log in</a></li>
+        </ul>
+        <div class='sidebar'>
+            <div class='togglebar'>
+                <div class='toggle'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class='nav-links upper'>
+                <ul>
+                    <li><a href='home.html' class='active'>home</a></li>
+                    <li><a href='how.html'>how it works</a></li>
+                    <li><a href='price.html'>pricing</a></li>
+                    <li><a href='customer.html'>customers</a></li>
+                    <li><img src='img/logo.png'></li>
+                </ul> 
+            </div>
+        </div>    
+    </div>
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div> 
+</header>
+
+<!--  end header  -->
+
+<!-- create log in form  -->
+
+<div id="popup" class="modal">
+  
+  <form class="modal-content animate">
+
+    <div class="x-container">
+      <span onclick="document.getElementById('popup').style.display='none'" class="close" title="Close">&times;</span>
+    </div>
+
+    <div class="container-input">
+
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="paasw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="paasw" required>
+        
+      <button type="submit">Login</button>
+      <div class="flex-element">
+        <input type="checkbox" checked="checked" id='remember' name="remember">
+        <label for="remember" class='custom-chbox'>Remember me</label>
+        <span class="forget">Forgot <a href="#">password?</a></span>
+      </div>
+
+      <div class="social-log">
+          <p>Log In Via Social Media</p>
+          <a href='#'><i class='fab facebook fa-facebook-f'></i></a>
+          <a href='#'><i class="fab insta fa-instagram"></i></a>
+          <a href='#'><i class="fab go fa-google-plus-g"></i></a>
+      </div>
+
+    </div>
+
+  </form>
+</div>
+
+<!-- end log in form  -->
+
+<!--  start banner  -->
+        <div class='banner'>
+            <div class='container'>
+                <h1 class='capitalize'>workflow for . <span class='type'></span></h1>
+                <p>The #1 Workflow Management Software used by 10,000+ Companies</p>
+                <p class='proceed'>By proceeding, you agree to our <a href='#' >Terms of Service </a>and <a href='#' >Privacy Policy</a></p>
+                <div class='container-slide'>
+                    <div class='slide'>
+                        <div class='active'><img src='img/slide3.jpg' alt=''></div>  
+                        <div><img src='img/slide2.jpg' alt=''></div>
+                        <div><img src='img/slide6.jpg' alt=''></div>
+                        <div><img src='img/slide4.jpg' alt=''></div>
+                    </div>
+                    <div class='control'>
+                        <h2 class='next'>Next</h2>
+                        <h2 class='prev'>Prev</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src='img/customers/europe_customer_logo_05.png' alt=''></div>
+            <div class="item"><img src='img/customers/europe_customer_logo_07.png' alt=''></div>
+            <div class="item"><img src='img/customers/europe_customer_logo_08.png' alt=''></div>
+            <div class="item"><img src='img/customers/europe_customer_logo_09.png' alt=''></div>
+            <div class="item"><img src='img/customers/europe_customer_logo_10.png' alt=''></div>
+            <div class="item"><img src='img/customers/europe_customer_logo_14.png' alt=''></div>
+            <div class="item"><img src='img/customers/global_logo_01.png' alt=''></div>
+            <div class="item"><img src='img/customers/global_logo_03.png' alt=''></div>
+            <div class="item"><img src='img/customers/global_logo_05.png' alt=''></div>
+            <div class="item"><img src='img/customers/global_logo_07.png' alt=''></div>
+            <div class="item"><img src='img/customers/global_logo_08.png' alt=''></div>
+            <div class="item"><img src='img/customers/middle_east_customer_logo_05.png' alt=''></div>
+            <div class="item"><img src='img/customers/middle_east_customer_logo_08.png' alt=''></div>
+            <div class="item"><img src='img/customers/us_customer_logo_04.png' alt=''></div>
+            <div class="item"><img src='img/customers/us_customer_logo_10.png' alt=''></div>
+            <div class="item"><img src='img/customers/us_customer_logo_12.png' alt=''></div>
+        </div>
+
+<!-- ============== end banner ================= -->
+        
+<!-- ============== start showcase ================= -->
+
+<div class="accord-feat">
+        <h2>FEATURES</h2>
+        <div id="tabs">
+                <ul id="accordion">
+                  <li>
+                    <a class="active" href="#tabs-1">
+                        <div class="tag">
+                        <div class="icon">
+                            <div><img src='img/icons/oneplatform_icon.png' alt=''></div>
+                        </div>
+                        <span class="title">One Platform</span>
+                      </div>
+                    </a>
+                      <div class="addon fadein">
+                        <span>
+                            Business process management software that lets you create an unlimited number of automated business applications. Choose from 45+ pre-installed apps, or create your own.
+                        </span>
+                        <a class="para-a" href="#">Learn More &nbsp; <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                      </div>
+                  </li>
+                  <li>
+                    <a href="#tabs-2">
+                        <div class="tag">
+                        <div class="icon">
+                            <div><img src='img/icons/drag-drop.png' alt=''></div>
+                        </div>
+                        <span class="title">Drag. Drop. Done.</span>
+                      </div>
+                    </a>
+                      <div class="addon">
+                        <span>
+                                Cloud workflow software has never been easier. Use the only workflow management software tool built for humans to create apps in a snap.
+                        </span>
+                        <a class="para-a" href="#">Learn More &nbsp; <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                      </div>
+                  </li>
+                  <li>
+                    <a href="#tabs-3">
+                        <div class="tag">
+                        <div class="icon">
+                            <div><img src='img/icons/report_icon.png' alt=''></div>
+                        </div>
+                        <span class="title">One Dashboard.</span>
+                      </div>
+                    </a>
+                      <div class="addon">
+                        <span>
+                                Stop using spreadsheets and email to track workflows. KiSSFLOW instantly shows you the progress of any item.
+                        </span>
+                        <a class="para-a" href="#">Learn More &nbsp; <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                      </div>
+                  </li>
+                  <li>
+                    <a href="#tabs-4">
+                        <div class="tag">
+                        <div class="icon">
+                            <div><img src='img/icons/chip.png' alt=''></div>
+                        </div>
+                        <span class="title">Part of Your Software</span>
+                        </div>
+                    </a>
+                        <div class="addon">
+                        <span>
+                          Connect KiSSFLOW to all of your essential workflow automation tools
+                        </span>
+                        <a class="para-a" href="#">Learn More &nbsp; <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+                        </div>
+                  </li>
+                </ul>
+
+                <div class="browser">
+                  <div class="top-bar">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                  </div>
+                  <div id="tabs-1" onclick='this.classList.toggle("zoom")'></div>
+                  <div id="tabs-2" onclick='this.classList.toggle("zoom")'></div>
+                  <div id="tabs-3" onclick='this.classList.toggle("zoom")'></div>
+                  <div id="tabs-4" onclick='this.classList.toggle("zoom")'></div>
+                  <div class="bottom-bar">
+                    <div class="chevron control"></div>
+                    <div class="circle control"></div>
+                    <div class="square control"></div>
+                  </div>
+                </div>
+        </div>
+    </div>
+
+
+<!-- ============== end showcase ================= -->
+
+<!-- ============== start testimonials ================= -->
+
+<div class="testimonials">
+    <h2 class='upper'>testimonials</h2>
+    <div class="fig-testi">
+        <figure class="testim">
+            <span class='icon-test'><i class="fas fa-quote-right"></i></span>
+            <figcaption>
+            <div class='test-img'><img src="img/testim1.png"/></div>
+            <blockquote>
+                <p>The beauty of KiSSFLOW is how quick and easy it is to create the apps I need. It is so user-friendly that I made exactly what I needed in 30 minutes.</p>
+            </blockquote>
+            <h3>Oliver Umehara</h3>
+            <h4>SoftBank Telecom</h4>
+            </figcaption>
+        </figure>
+
+        <figure class="testim">
+            <span class='icon-test'><i class="fas fa-quote-right"></i></span>
+            <figcaption>
+            <div class='test-img'><img src="img/testim2.png"/></div>
+            <blockquote>
+                <p>Thanks for helping us improve our Global g the time and errors we may have encountered in our previous .improvement in our total processing time!</p>
+            </blockquote>
+            <h3>Brian Trier</h3>
+            <h4>Dominos</h4>
+            </figcaption>
+        </figure>
+
+        <figure class="testim">
+            <span class='icon-test'><i class="fas fa-quote-right"></i></span>
+            <figcaption>
+            <div class='test-img'><img src="img/testim3.png"/></div>
+            <blockquote>
+                <p>As an organisation, the word KiSSFLOW synonymous with quality and staff of all levels have embraced the platform and all speak highly of it.</p>
+            </blockquote>
+            <h3>Craig Buck</h3>
+            <h4>Warwickshire College Group</h4>
+            </figcaption>
+        </figure>
+
+    </div>
+</div>
+
+<div class="golden-test">
+    <h2 calss='upper'>golden tesimonials</h2>
+    <div class="gold">
+        <div class="card">
+            <h3>Rashel Koman</h3>
+            <p>As an organisation, the word KiSSFLOW synonymous with quality and staff of all levels have embraced the platform and all speak highly of it</p>
+            <div class="social-container transition">
+                <a href='#' class='social'><i class='fab fa-facebook-f'></i></a>
+                <a href='#' class='social'><i class="fab fa-instagram"></i></a>
+                <a href='#' class='social'><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <div class="card_circle"><img src="img/gold1.jpg" alt=""></div>
+        </div>
+
+        <div class="card">
+            <h3>GOHN POWEL</h3>
+            <p>As an organisation, the word KiSSFLOW synonymous with quality and staff of all levels have embraced the platform and all speak highly of it</p>
+            <div class="social-container transition">
+                <a href='#' class='social'><i class='fab fa-facebook-f'></i></a>
+                <a href='#' class='social'><i class="fab fa-instagram"></i></a>
+                <a href='#' class='social'><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <div class="card_circle"><img src="img/gold2.jpg" alt=""></div>
+        </div>
+
+        <div class="card last-card">
+            <h3>EDWARD MURPHY</h3>
+            <p>As an organisation, the word KiSSFLOW synonymous with quality and staff of all levels have embraced the platform and all speak highly of it</p>
+            <div class="social-container transition">
+                <a href='#' class='social'><i class='fab fa-facebook-f'></i></a>
+                <a href='#' class='social'><i class="fab fa-instagram"></i></a>
+                <a href='#' class='social'><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <div class="card_circle"><img src="img/gold3.jpg" alt=""></div>
+        </div>
+    </div>
+
+</div>
+
+<!--  start mail sec...  -->
+
+<div class='mail'>
+    <h2>You are 15 minutes away from, “Wow, that was easy!”</h2>
+    <p>See how simple KiSSFLOW is to use. Free for 14 days.</p>
+    <div class='input'>
+    <input type='email' placeholder='EMAIL'>
+    <input type='submit' value='get started' class='upper'>
+    </div>
+    <p class='proceed'>By proceeding, you agree to our <a href='#' >Terms of Service </a>and <a href='#' >Privacy Policy</a></p>
+</div>
+<!-- ============== end testimonials ================= -->
+
+<!-- ============== start multifooter ================= -->
+
+    <div class='multi-footer'> <!-- Open Multi-Footer -->
+        <div class='container'>
+            <div class='footer-links'> <!-- Open footer-links -->
+
+                <ul>
+                    <p>Inside WORKFLOW</p>
+                    <li><a href='#'>Inside Scoop</a></li>
+                    <li><a href='#'>Jobs</a></li>
+                    <li><a href='#'>OrangeScape.com</a></li>
+                    <li><a href='#'>Low-Code Platform</a></li>
+                    <li><a href='#'>OrangeScape Inc..</a></li>
+                </ul>
+
+                <ul>
+                    <p>Communication Address</p>
+                    <li><a href='#'>OrangeScape Inc..</a></li>
+                    <li><a href='#'>800 West El Camino Real,</a></li>
+                    <li><a href='#'>Mountain View, CA 94040</a></li>
+                    <li><a href='#'>Call Us: +1-650-396-7692</a></li>
+                    <li><a href='#'>Email us: contact@workflow.com</a></li>
+                    <li><a href='#'>Terms & Conditions</a></li>
+                </ul>
+
+                <ul>
+                    <p>Resources</p>
+                    <li><a href='#'>Workflow Managment System</a></li>
+                    <li><a href='#'>Low-Code Platform</a></li>
+                    <li><a href='#'>Quickbase Alternative</a></li>
+                    <li><a href='#'>Workflow For Google Apps</a></li>
+                    <li><a href='#'>Workflow Management Software</a></li>
+                    <li><a href='#'>Bpm Software</a></li>
+                    <li><a href='#'>RAD Software</a></li>
+                    <li><a href='#'>HR Process Automation</a></li>
+                    <li><a href='#'>Finance Process Automation</a></li>
+                </ul>
+
+                <ul>
+                    <p>Legal</p>
+                    <li><a href='#'>Privacy Policy</a></li>
+                    <li><a href='#'>Terms Of Service</a></li>
+                    <li><a href='#'>GDPR</a></li>
+                    <li><a href='#'>Data Processing Agreement</a></li>
+                </ul>
+
+                <ul>
+                    <p>Quick Links</p>
+                    <li><a href='#'>Pricing</a></li>
+                    <li><a href='#'>Partners</a></li>
+                    <li><a href='#'>Get Free Demo</a></li>
+                    <li><a href='#'>Responsible Disclosure</a></li>
+                    <li><a href='#'>Automation Onslaught</a></li>
+                    <li><a href='#'>Entertainment</a></li>
+                    <li><a href='#'>Fashion wear</a></li>
+                </ul>
+                
+                <ul>
+                    <p>Quick Links</p>
+                    <li><a href='#'>Pricing</a></li>
+                    <li><a href='#'>Partners</a></li>
+                    <li><a href='#'>Get Free Demo</a></li>
+                    <li><a href='#'>Responsible Disclosure</a></li>
+                    <li><a href='#'>Automation Onslaught</a></li>
+                    <li><a href='#'>Entertainment</a></li>
+                    <li><a href='#'>Fashion wear</a></li>
+                </ul> 
+
+            </div> <!-- close footer-links -->
+
+            <div class='rights'> <!-- Open Rights -->
+                <p>Copyright © 2019 KiSSFLOW. All rights reserved</p>
+                <div class='social-icons'> <!-- Open Social-Icons -->
+                    <a href='#'><i class='fab fa-facebook-f'></i></a>
+                    <a href='#'><i class='fab fa-twitter'></i></a>
+                    <a href='#'><i class='fab fa-linkedin-in'></i></a>
+                    
+                </div> <!-- Open Social-Icons -->
+            </div> <!-- Close Rights -->
+    </div>
+</div> <!-- Close Multi-Footer -->
+
+<!-- ============== end multifooter ================= -->
+        <!--  Javascript Files  -->
+        <script src='js/jquery-3.3.1.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+        <script src='js/typed.js'></script>
+        <script src='js/wow.min.js'></script>
+        <script src='js/owl.carousel.min.js'></script>
+        <script src='js/custom.js'></script>
+        <script>
+            window.onscroll = function() {myFunction()};
+    
+            function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+            };
+
+            var modal = document.getElementById('popup');
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+
+            $(function() {
+                $("#tabs").tabs({
+                    show: { effect: "blind", direction: "right", duration: 300 }
+                });
+                $( "#accordion" ).accordion();
+
+                var btn = $('#accordion li a');
+                var wrapper = $('#accordion li');
+
+                $(btn).on('click', function() {
+                    $(btn).removeClass('active');
+                    $(btn).parent().find('.addon').removeClass('fadein');
+                    
+                    $(this).addClass('active');
+                    $(this).parent().find('.addon').addClass('fadein');
+                });
+            });
+        </script>
+                
+    </body>
+</html>
+    

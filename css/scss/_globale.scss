@@ -1,0 +1,78 @@
+
+
+    /* =========== Start Globale Style ============ */
+
+
+    html {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: $whiteColor;
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    ::-webkit-scrollbar { width:5px;}
+
+    ::-webkit-scrollbar-thumb { background: #000; border-radius: 10px  }
+
+    ::-webkit-scrollbar-track { background: transparent; }
+
+    ::-webkit-selection {
+        background-color: $mainColor;
+        color: $whiteColor;
+    }
+    
+    ::-moz-selection{
+        background-color: $mainColor;
+        color: $whiteColor;
+    }
+    
+    ::selection{
+        background-color: $mainColor;
+        color: $whiteColor;
+    }
+
+    ::focus { outline: none }
+
+    .container {
+        max-width: 1170px;
+        margin: auto;
+    }
+
+    a{
+        text-decoration:none;
+        &:hover, &:focus{
+           text-decoration:none;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    img {
+        page-break-inside: avoid;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .capitalize {
+        text-transform: capitalize;
+    }
+
+    .upper {
+        text-transform: uppercase;
+    }
+
+    /* ============= End Globale Style ============= */

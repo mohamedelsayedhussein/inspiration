@@ -1,0 +1,372 @@
+
+/* header style */
+header {
+    padding: .9rem 0;
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .1);
+    position: sticky;
+    top: 0;
+    z-index: 222;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .demo {
+        
+        a {
+            display: block;
+            border: 1px solid $blackColor;
+            padding: .4rem 1.2rem;
+            font: 500 .9rem $primaryFont;
+            color: $blackColor;
+            position: relative;
+            letter-spacing: 1px;
+            transition: all .2s linear;z-index: 1;
+            
+            &:hover {
+                color: #fff;
+            }
+            
+            span {
+                position: absolute;
+                width: 25%;
+                height: 100%;
+                background: #292929;
+                bottom: 0;
+                z-index: -1;
+                transform: scaley(0);
+                transform-origin: top;
+                transition: transform .3s linear;
+
+                &:nth-child(1) {
+                    left: 0;
+                    transition-delay: 0;
+                }
+
+                &:nth-child(2) {
+                    left: 25%;
+                    transition-delay: .15s;
+                }
+
+                &:nth-child(3) {
+                    left: 50%;
+                    transition-delay: .3s
+                }
+
+                &:nth-child(4) {
+                    left: 75%;
+                    transition-delay: .45s;
+                }
+            }
+
+            &:hover span {
+                transform: scaley(1);
+                transform-origin: bottom;
+            }
+        }
+    }
+
+    .flex-head {
+        display: flex;
+
+        li {
+            padding: 0 .7rem;
+
+            a {
+                position: relative;
+                display: block;        
+                padding: .2rem .5rem;        
+                color: $blackColor;
+                font: 500 .8rem $mainFont;
+                overflow: hidden;
+                transition: all .3s linear;
+                z-index: 2;
+                
+                &:hover {
+                    color: #fff;
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: calc(50% - 2px);
+                    left: -100%;
+                    width: 100%;
+                    height: 2px;
+                    background: #292929;
+                    transition: all .2s linear;
+                }
+
+                &:hover:before {
+                    animation: animate .5s linear forwards;
+                }
+            }
+        }
+
+        @keyframes animate {
+            0%{
+                top: calc(50% - 2px);
+                left: -100%;
+                width: 100%;
+                height: 3px;
+                z-index: 1;
+            }
+            50%{
+                top: calc(50% - 2px);
+                left: 0;
+                width: 100%;
+                height: 3px;
+                z-index: 1;
+            }
+            100%{
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+        }
+    }
+
+    .logo {
+        width: 15rem;
+    }
+
+    .sidebar {
+        width: 25%;
+        position: fixed;
+        top: 0;
+        left: calc(-25% + 40px);
+        height: 100%;
+        background: $whiteColor;
+        transition: all .5s linear;
+        z-index: 999;
+
+        .togglebar {
+            position: absolute;
+            right: 0;
+            width: 40px;
+            height: 100%;
+            background: $blackColor;
+            transition: all .5s linear;
+
+            .toggle {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+
+                span {
+                    display: block;
+                    width: 30px;
+                    height: 3px;
+                    background: $whiteColor;
+                    margin: 7px 0;
+                    transition: all .5s linear;
+                }
+            }
+        }
+
+        .nav-links {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .active {
+                color: $mainColor !important;
+            }
+
+            a {
+                position: relative;
+                color: $blackColor;
+                font: bold 1.3rem/2 $mainFont;
+                width: 100%;
+                transition: all .3s linear;
+                padding: .2rem .7rem;
+   
+                &:hover {
+                    background: $blackColor;
+                    color: $whiteColor !important;
+                }
+
+                &:before {
+                    position: absolute;
+                    content: '';
+                    bottom: 12px;
+                    left: 12px;
+                    width: 12px;
+                    height: 12px;
+                    border: 3px solid $blackColor;
+                    border-width: 0 0 3px 3px;
+                    transition: all .3s linear;
+                    opacity: 0;
+                }
+
+                &:hover:before {
+                    left: -10px;
+                    bottom: -10px;
+                    opacity: 1;
+                }
+
+                &:after {
+                    position: absolute;
+                    content: '';
+                    top: 12px;
+                    right: 12px;
+                    width: 12px;
+                    height: 12px;
+                    border: 3px solid $blackColor;
+                    border-width: 3px 3px 0 0;
+                    transition: all .3s linear;
+                    opacity: 0;
+                }
+
+                &:hover:after {
+                    top: -10px;
+                    right: -10px;
+                    opacity: 1;
+                }
+            }
+
+            img {
+                width: 8rem;
+                position: absolute;
+                bottom: -14rem;
+                left: -6rem;
+            }
+    
+        }
+    }
+
+    /* classes for jquery */
+
+    .sidebar.active { left: 0;}
+
+    .toggle.close span {
+
+        &:first-child {
+            transform: rotate(-45deg)
+        }
+
+        &:nth-child(3) {
+            transform: rotate(45deg)
+        }
+        
+        &:nth-child(2) {
+            transform: translatex(100px) rotate(360deg);
+            opacity: 0;
+            background: #000;
+        }
+    }
+}
+
+
+.right-bar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 75px;
+    min-height: 640px;
+    text-align: center;
+    overflow: hidden;
+    filter: drop-shadow(3px 3px 7px rgba(0, 0, 0, .2));
+    background: rgba(255, 255, 255, 1);
+    z-index: 1;
+
+    .search {
+        position: absolute;
+        top: 4%;
+        left: 50%;
+        transform: translatex(-50%);
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+    
+    .lang {
+        writing-mode: vertical-lr;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translatex(-50%);
+        font: 500 1rem $primaryFont;
+
+        span {
+            cursor: pointer;            
+        }
+
+        span:nth-child(2) {
+            pointer-events: none !important;
+        }
+    }
+
+    .equal {
+        position: absolute;
+        top: 51%;
+        left: 50%;
+        transform: translatex(-50%);
+        font-size: 2.5rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all .3s linear;
+    }
+
+    .v-equal {
+        transform: rotate(90deg);
+    }
+
+    ul.icons {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translatex(-50%);
+
+        li {
+            padding: .3rem;
+            font-size: .8rem;
+            transition: all .3s linear;
+            cursor: pointer;    
+
+            &:hover a {
+                transform: translatex(0);
+            }
+
+            a {
+                display: block;
+                padding-top: .2rem;
+                font: 300 .6rem $textFont;
+                transform: translatex(5rem);
+                transition: all .3s linear;
+                color: #000;
+
+            }
+        }
+    }              
+}
+
+.custom-right-bar {
+    height: 100vh;
+}
+
+.custom-search {
+    position: absolute;
+    top: 25px !important;
+}
+
+
+.progress-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: transparent;
+
+    .progress-bar {
+        height: 3px;
+        background: $mainColor;
+        width: 0%;
+      }
+  }
