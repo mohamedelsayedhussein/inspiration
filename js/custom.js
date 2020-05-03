@@ -88,8 +88,6 @@ var typed = new Typed('.type', {
     });
 });
 
-// accordion
-
 
 
 
